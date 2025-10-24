@@ -1,7 +1,7 @@
 #+title: Barconfig
 #+author: Rumen Mitov
 
-This patch **requires** the dwl [[https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/bar][barconfig]] patch be applied first! The barconfig patch provides configuration for the dwl bar via the variable
+This patch *requires* the dwl [[https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/bar][barconfig]] patch be applied first! The barconfig patch provides configuration for the dwl bar via the variable
 =barlayout=. This determines which of the elements listed below to
 display on the bar and in which order:
 
@@ -15,6 +15,5 @@ display on the bar and in which order:
 *NOTE*: This patch is a dwl port of the [[https://dwm.suckless.org/patches/barconfig/][original]] barconfig patch for dwm.
 
 *** Known Issues With Patch
-Putting the tags after the '|' separator prevents tags 1 to 7 from being displayed. I do not have any plans
-to look into this, as I ported this patch for the sole purpose of having the option to omit the layout symbol from 
+Changing the location of the tags breaks the tag button presses (the buttons expect the click in the usual location of the tags). I do not have any plans to look into this, as I ported this patch for the sole purpose of having the option to omit the layout symbol from 
 the bar.

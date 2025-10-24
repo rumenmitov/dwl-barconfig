@@ -1640,9 +1640,10 @@ drawbar(Monitor *m)
 					occ |= c->tags;
 					if (c->isurgent)
 						urg |= c->tags;
-
-          c = focustop(m); 
 				}
+
+        c = focustop(m); 
+
 				/* tags */
 				if (moveright) {
 					tw = 0;

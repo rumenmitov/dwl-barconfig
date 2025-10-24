@@ -49,7 +49,7 @@ index bf340d8..f0d72cf 100644
  	Client *c;
  	Buffer *buf;
  
-@@ -1581,48 +1581,98 @@ drawbar(Monitor *m)
+@@ -1581,48 +1581,99 @@ drawbar(Monitor *m)
  	if (!(buf = bufmon(m)))
  		return;
  
@@ -152,9 +152,10 @@ index bf340d8..f0d72cf 100644
 +					occ |= c->tags;
 +					if (c->isurgent)
 +						urg |= c->tags;
-+
-+          c = focustop(m); 
 +				}
++
++       c = focustop(m); 
++
 +				/* tags */
 +				if (moveright) {
 +					tw = 0;
